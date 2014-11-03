@@ -22,5 +22,10 @@ func AboutPageView(w http.ResponseWriter, r *http.Request) {
     templates.ExecuteTemplate(w, "aboutPage", aboutPageViewModel)
 }
 
+// Handle all static files according to their name
+func StaticFileViewHandler(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, r.URL.Path[1:])
+}
+
 
 
