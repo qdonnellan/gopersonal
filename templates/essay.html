@@ -1,0 +1,21 @@
+{{ define "essayPage" }}
+<!doctype html>
+<html>
+    <head>
+        {{ template "header" . }}
+        <script src="/static/js/markdown.js"></script>
+        <script src="/static/js/essay-view-model.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="raw-essay-markdown">{{ .MainContent }}</div>
+                <div class="parsed-essay-content">
+                    <p data-bind="html: parsedMarkdown"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+{{ end }}
