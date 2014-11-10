@@ -15,5 +15,5 @@ $(document).ready(function() {
     // parse the raw markdown data which is embedded in the dom,
     // put there by the server when rendering the essay template
     var raw_markdown = $(".raw-essay-markdown").html()
-    vm.rawMarkdown(raw_markdownm);
+    vm.rawMarkdown(raw_markdown);
 });
