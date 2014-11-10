@@ -61,6 +61,11 @@ Essentially I don't sit at all during the day except for the 45 minutes or so of
 
 The first week of standing all day long was exhausting, even with several months of working out. Also, my workouts that week (particularly squats) were much more difficult. However, baby loves being held while I stand, which translates to more workable hours in the day, and a less frustrated me in the afternoon. 
 
+## Optimizing/Combining Tasks
+One of the lessons I've learned recently which has resulted in a huge boost in productivity is to optimize *passive* time I spend with baby. For example, I consider feeding the baby a passive task - I'm literally just standing there while he stares at our ceiling fan and slowly drifts into a food coma. This time consumes approximately 45 minutes to 1 hour each day and I've come to appreciate it as a perfect opportunity to listen to a podcast, read an article, or watch a tutorial video. (I've actually been able to digest a whole lot of [Patrick McKenzie](http://www.kalzumeus.com/) in this manner, a goal I've been reaching at for a while now). 
+
+It's important to note here that I don't actually subscribe to the concept of "multitasking", that someone can perform two *non-passive* tasks with skill simultaneously. Thus, I've been careful to overlap only passive baby tasks. If I turned on a podcast while I was changing a diaper I'd either completely miss important points in the audio or something much worse will happen to my changing table!
+
 ## Closing thoughts
 More than anything it's been incredibly rewarding to be able to look down at my baby boy any hour during the day. I was once nervious about his crying or noise-making being a distraction to me but I've found that these distractions help me from becoming bogged down in mind-numbing bugs. Though I haven't been explicitly tracking my internet behavior, I am certain that I spend much less time surfing/reading useless stuff/generally wasting time on the internet, because those ineffecient activities have been supplanted by the very rewarding task of raising a child.
 
