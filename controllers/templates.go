@@ -1,10 +1,6 @@
 package controllers
 
-import (
-    "html/template"
-    "net/http"
-    "models"
-)
+import "html/template"
 
 // compile all templates and cache them
 var templates = template.Must(template.ParseFiles(
@@ -13,7 +9,3 @@ var templates = template.Must(template.ParseFiles(
     "templates/header.html",
     "templates/essay.html",
 ))
-
-func RenderViewModelToTemplate(w http.ResponseWriter, templateName string, viewModel models.WebPage) {
-    templates.ExecuteTemplate(w, templateName, viewModel)
-}
