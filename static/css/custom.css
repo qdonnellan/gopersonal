@@ -2,3 +2,26 @@
 .raw-essay-markdown {
     display: none;
 }
+
+.essay h1, 
+.essay h2, 
+.essay h3, 
+.essay h4, 
+.essay h5 {
+    font-family: 'Neuton', serif;
+    font-weight: 800;
+}
+
+.parsed-essay-content {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Front Page */
+
+.front {
+    padding-top: 100px;
+}
+
+.front h1 {
+    font-family: 'Vollkorn', serif;
+}
