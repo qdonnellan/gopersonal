@@ -3,16 +3,29 @@
 <html>
     <head>
         {{ template "header" . }}
+
+        <!-- Extra header -->
         <script src="/static/js/markdown.js"></script>
-        <script src="/static/js/essay-view-model.js"></script>
+        <script src="/static/js/essay-app.js"></script>
     </head>
     <body>
-        <div class="container">
-            <div class="col-sm-12">
+        <div class="container essay">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="raw-essay-markdown">{{ .MainContent }}</div>
                 <div class="parsed-essay-content">
-                    <p data-bind="html: parsedMarkdown"></p>
+                    <p class="lead" data-bind="html: parsedMarkdown"></p>
                 </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-muted">
+                    See the revision history of this essay on 
+                    <a href="https://github.com/qdonnellan/gopersonal/commits/master/content/essays/{{ .Title }}.md">
+                        github.com
+                    </a>
+                </p>
+                <p class="text-muted">
+                    &copy; 2014 Quentin Donnellan
+                </p>
             </div>
         </div>
     </body>
