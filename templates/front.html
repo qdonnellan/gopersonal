@@ -1,19 +1,23 @@
 {{ define "frontPage" }}
 <!doctype html>
-<html>
-    <head>{{ template "header" . }}</head>
+<html lang="en">
+    <head>
+        {{ template "header" . }}
+    </head>
+        
     <body>
-        <div class="container front">
-            <div class="col-sm-12">
-                <div class="text-center">
-                    <h1>quentin donnellan</h1>
-                    <p class='lead'>software/consulting</p>
-                    <p class="text-muted">Sorry for the mess, this website is currently being updated</p>
-                    <p class="text-muted">Keep up with the changes at 
-                        <a href="https://github.com/qdonnellan/gopersonal">
-                            github.com
-                        </a>
+        <div class="container marketing">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1>Quentin Donnellan</h1>
+                    <p class='lead'>
+                        SOFTWARE & CONSULTING
                     </p>
+                    <p class="lead">Your business has goals you want to reach and problems that need to be solved. Let's work together to increase your revenue each month starting today.</p>
+                    <a class="btn btn-lg btn-theme" href="/contact">
+                        Tell me how I can help you
+                    </a>
+                    
                 </div>
             </div>
         </div>
