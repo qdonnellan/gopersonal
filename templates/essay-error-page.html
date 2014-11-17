@@ -1,0 +1,19 @@
+{{ define "essayErrorPage" }}
+<!doctype html>
+<html>
+    <head>
+        {{ template "header" . }}
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <h1>Error Fetching Essay</h1>
+                    <p class='lead'>Most likely, this essay doesn't exist</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+{{ end }}

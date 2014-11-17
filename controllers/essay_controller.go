@@ -7,19 +7,19 @@ import (
 )
 
 func RenderEssayPage(w http.ResponseWriter, essayTitle string) {
-    markdownContent := getEssayContentByEssayTitle(essayTitle)
-    essayPageModel := createEssayPageModel(essayTitle, markdownContent)
-    templates.ExecuteTemplate(w, "essayPage", essayPageModel)
+    markdownContent, err := getEssayContentByEssayTitle(essayTitle)
+    if err != nil {
+        RenderBasicPage(w, "essayErrorPage")
+    } else {
+        essayPageModel := createEssayPageModel(essayTitle, markdownContent)
+        templates.ExecuteTemplate(w, "essayPage", essayPageModel)
+    }
 }
 
-func getEssayContentByEssayTitle(essayTitle string) string {
+func getEssayContentByEssayTitle(essayTitle string) (string, error) {
     filePath := "content/essays/" + essayTitle + ".md"
     markdownData, err := ioutil.ReadFile(filePath)
-    if err != nil {
-        panic(err)
-    } else {
-        return string(markdownData)
-    }
+    return string(markdownData), err
 }
 
 func createEssayPageModel(title string, content string) models.WebPage {

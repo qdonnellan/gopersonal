@@ -8,6 +8,7 @@ import (
 var templateTitleMap = map[string]string{
     "frontPage" : "Home",
     "aboutPage" : "About Me",
+    "essayErrorPage" : "Error Loading Essay",
 }
 
 func RenderBasicPage(w http.ResponseWriter, templateName string) {

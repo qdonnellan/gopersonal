@@ -9,4 +9,5 @@ var templates = template.Must(template.ParseFiles(
     "templates/header.html",
     "templates/contact.html",
     "templates/essay.html",
+    "templates/essay-error-page.html",
 ))
