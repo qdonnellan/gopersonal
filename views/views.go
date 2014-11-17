@@ -7,7 +7,16 @@ import (
 
 // Handle the front page
 func FrontPageView(w http.ResponseWriter, r *http.Request) {
-    controllers.RenderBasicPage(w, "frontPage")
+    controllers.RenderBasicPage(w, "frontPage") 
+}
+
+// Handle the contact page
+func ContactPageView(w http.ResponseWriter, r *http.Request) {
+    if r.Method == "POST" {
+        controllers.HandleEmailInquiry(w, r)
+    } else {
+        controllers.RenderBasicPage(w, "contactPage") 
+    }
 }
 
 // Handle the about page

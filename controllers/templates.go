@@ -7,5 +7,6 @@ var templates = template.Must(template.ParseFiles(
     "templates/front.html",
     "templates/about.html",
     "templates/header.html",
+    "templates/contact.html",
     "templates/essay.html",
 ))
