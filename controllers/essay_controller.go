@@ -6,6 +6,8 @@ import (
     "io/ioutil"
 )
 
+// RenderEssayPage renders the essay page template by populating
+// it with the associated markdown content.
 func RenderEssayPage(w http.ResponseWriter, essayTitle string) {
     essayContent, err := getEssayContentByEssayTitle(essayTitle)
     if err != nil {

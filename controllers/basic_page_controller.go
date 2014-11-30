@@ -14,6 +14,7 @@ var templateTitleMap = map[string]string{
     "projectPage" : "Side Projects created by Quentin Donnellan",
 }
 
+// RenderBasicPage renders a simple template.
 func RenderBasicPage(w http.ResponseWriter, templateName string) {
     basicPageModel := models.WebPage{
         Title : templateTitleMap[templateName],
