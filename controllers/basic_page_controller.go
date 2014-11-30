@@ -2,18 +2,22 @@ package controllers
 
 import (
     "net/http"
-    "models"
+    "github/go-personal/models"
 )
 
 var templateTitleMap = map[string]string{
-    "frontPage" : "Home",
-    "aboutPage" : "About Me",
+    "frontPage" : "Quentin Donnellan: Front Page",
+    "aboutPage" : "About Quentin Donnellan",
     "essayErrorPage" : "Error Loading Essay",
+    "constructionPage" : "Under Construction",
+    "essayListPage" : "All Essays",
+    "projectPage" : "Side Projects created by Quentin Donnellan",
 }
 
 func RenderBasicPage(w http.ResponseWriter, templateName string) {
     basicPageModel := models.WebPage{
         Title : templateTitleMap[templateName],
+        TemplateName : templateName,
     }
-    templates.ExecuteTemplate(w, templateName, basicPageModel)
+    RenderTemplateFromPageModel(w, basicPageModel)
 }

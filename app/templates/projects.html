@@ -1,0 +1,128 @@
+{{ define "projectPage" }}
+<!doctype html>
+<html lang="en">
+    <head>
+        {{ template "header" . }}
+    </head>
+        
+    <body>
+        <div class="container marketing projects">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1>
+                        <a class="pull-right btn btn-default" href="/">Back Home</a>
+                        Side Projects <small>by Quentin Donnellan</small></h1>
+                    <hr>
+                </div>
+                <div class="col-sm-12 project-div">
+                    <div class="col-sm-6">
+                        <h2>Lessonwell</h2>
+                        <p class="lead">Lessonwell started out as a personal project for my own Calculus class. I wanted a content management platform based on Markdown and MathJax that I could use to quickly prototype lessons without navigating through insanely complicated education CMS (which is basically every education CMS).</p>
+                        <div class="btn-group">
+                            <a href="http://www.lessonwell.com" class="btn btn-default">
+                                <i class="fa fa-globe"></i> 
+                                View Live
+                            </a>
+                            <a href="https://github.com/qdonnellan/lessonwell" class="btn btn-default">
+                                <i class="fa fa-github"></i> 
+                                Open Source on Github
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="/static/img/lessonwell.png" alt="screenshot from my web application Lessonwell">
+                    </div>
+                </div>
+                <div class="col-sm-12 project-div">
+                    <div class="col-sm-6">
+                        <h2>GoKnockdown</h2>
+                        <p class="lead">One of my favorite features of lessonwell (above) is a real-time Markdown/MathJax editor that I created to make prototyping math lessons super easy. I used it as an excuse to learn Go and KnockdownJS on Google App Engine and created this tiny standalone app.</p>
+                        <div class="btn-group">
+                            <a href="http://goknockdown.appspot.com" class="btn btn-default">
+                                <i class="fa fa-globe"></i> 
+                                View Live
+                            </a>
+                            <a href="https://github.com/qdonnellan/goknockdown" class="btn btn-default">
+                                <i class="fa fa-github"></i> 
+                                Open Source on Github
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="/static/img/goknockdown.png" alt="screenshot from my web application GoKnockdown">
+                    </div>
+                </div>
+                <div class="col-sm-12 project-div">
+                    <div class="col-sm-6">
+                        <h2>HoneSchool</h2>
+                        <p class="lead">Hone School was less of a software project and more of an after school program for kids in my area. We taught them Ruby using the Sphero robot. I had to drop this project when my own child was born, unfortunately. I built up a rather nice-looking curriculum platform and marketing front-end.</p>
+                        <button disabled class="btn btn-default">Project Closed - Stepped Down As Founder</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="/static/img/honeschool.png" alt="screenshot from my after school program Hone School">
+                    </div>
+                </div>
+                <div class="col-sm-12 project-div">
+                    <div class="col-sm-6">
+                        <h2>The Badge Project</h2>
+                        <p class="lead">This has probably been my most ambitious (and likewise buggy) application yet - an attempt to create a badge-based gradebook. I actually used this for a marking period in my Calculus class with great success. I underestimated the amount of time it took to teach and maintain this project so I had to kill it. Would love to revive one day...</p>
+                        <div class="btn-group">
+                            <a href="https://github.com/qdonnellan/badgeproject" class="btn btn-default">
+                                <i class="fa fa-github"></i> 
+                                Open Source on Github
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="/static/img/badgeproject.png" alt="screenshot from my web application The Badge Project">
+                    </div>
+                </div>
+                <div class="col-sm-12 project-div">
+                    <div class="col-sm-6">
+                        <h2>Speculess</h2>
+                        <p class="lead">When I built speculess I was going through a <em>holy cow mirrorless cameras are the best thing since sliced bread</em> phase. It was good motivation to whip up a python webapp with a totally different focus from anything I'd done before.</p>
+                        <div class="btn-group">
+                            <a href="http://speculess.appspot.com" class="btn btn-default">
+                                <i class="fa fa-globe"></i> 
+                                View Live
+                            </a>
+                            <a href="https://github.com/qdonnellan/speculess" class="btn btn-default">
+                                <i class="fa fa-github"></i> 
+                                Open Source on Github
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="/static/img/speculess.png" alt="screenshot from my web application speculess">
+                    </div>
+                </div>
+                <div class="col-sm-12 project-div">
+                    <div class="col-sm-6">
+                        <h2>qCalculus</h2>
+                        <p class="lead">Long before there was Lessonwell there was qCalculus - my attempt to synthesize everything I liked about Udacity and Khan Academy into an app made exclusively for my calculus students. This was also one of the very first Python app I ever built. </p>
+                        <div class="btn-group">
+                            <a href="http://qcalculus.appspot.com" class="btn btn-default">
+                                <i class="fa fa-globe"></i> 
+                                View Live
+                            </a>
+                            <a href="https://github.com/qdonnellan/qcalculus" class="btn btn-default">
+                                <i class="fa fa-github"></i> 
+                                Open Source on Github
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="/static/img/qcalculus.png" alt="screenshot from my web application qCalculus">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+{{ end }}
