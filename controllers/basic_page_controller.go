@@ -9,7 +9,7 @@ var templateTitleMap = map[string]string{
     "frontPage" : "Quentin Donnellan: Front Page",
     "aboutPage" : "About Quentin Donnellan",
     "essayErrorPage" : "Error Loading Essay",
-    "constructionPage" : "Under Construction",
+    "underConstruction" : "Under Construction",
     "essayListPage" : "All Essays",
     "projectPage" : "Side Projects created by Quentin Donnellan",
 }
